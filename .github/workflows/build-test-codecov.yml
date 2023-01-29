@@ -5,6 +5,8 @@ on:
   # Triggers the workflow on push or pull request events
   pull_request:
     types: [opened, synchronize]
+    paths:
+      - 'src/main/**/*.kt'
     
 jobs:
   build:
