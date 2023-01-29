@@ -7,6 +7,10 @@ android {
     namespace 'manager.game.nomic'
     compileSdk 33
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "manager.game.nomic"
         minSdk 29
