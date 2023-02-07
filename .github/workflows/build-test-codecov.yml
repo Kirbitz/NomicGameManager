@@ -27,12 +27,12 @@ jobs:
       
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
-        
+
+      - name: Build Gradle
+        run: gradle build
+
       - name: Run Tests
-        run: ./gradlew test
-        
-      - name: Generate kover coverage report
-        run: ./gradlew koverXmlReport
+        run: gradle test
         
       - name: Add coverage report to PR
         id: kover
